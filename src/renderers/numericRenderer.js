@@ -2,6 +2,9 @@ import numbro from 'numbro';
 import {getRenderer} from './index';
 import {isNumeric} from './../helpers/number';
 
+import * as language from 'numbro/dist/languages/ja-JP.min';
+
+numbro.culture(language.cultureCode, language);
 /**
  * Numeric cell renderer
  *
